@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
 
 @font-face {
   font-family: MyGothicFont;
@@ -47,9 +47,9 @@ span {
 .big-letter {
   font-size: 7em;
   font-weight: bold;
-  display: block; 
-  line-height: 0.8; 
-  margin-right: 5px; 
+  display: block;
+  line-height: 0.8;
+  margin-right: 5px;
   margin-top: 0;
 }
 
@@ -57,7 +57,6 @@ span {
   font-family: mainTextStyle;
   color: #150404;
   text-shadow: 1px 1px 2px #412703;
-  
 }
 
 body {
@@ -66,10 +65,9 @@ body {
   margin: 0;
   padding: 0;
   background: url(images/backBody.jpg);
-  background-size: 210mm 297mm ;
+  background-size: 210mm 297mm;
   background-repeat: no-repeat;
 }
-
 
 header {
   width: 100%;
@@ -90,12 +88,12 @@ main {
   justify-content: space-between;
   border: 5px solid black;
   white-space: nowrap;
-  gap: 0px
+  gap: 0px;
 }
 
 .in-div-style {
   font-family: MyGothicFont;
-  text-align:center;
+  text-align: center;
   font-size: 1.1em;
   text-transform: uppercase;
   color: #0e0d0d;
@@ -124,12 +122,11 @@ main {
   height: 56mm;
   border: 10px solid black;
   background: url(images/griffindor.jpg);
-  background-size: 38mm 56mm ;
+  background-size: 38mm 56mm;
   background-repeat: no-repeat;
 }
 
-
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -143,8 +140,8 @@ main {
 .flex-container {
   display: flex;
   width: 100%;
-  height:100%;
-  flex-wrap:nowrap;
+  height: 100%;
+  flex-wrap: nowrap;
   gap: 10px;
 }
 
@@ -153,10 +150,9 @@ main {
 }
 
 .flex-item {
-  text-align:center;
+  text-align: center;
   font-size: 1em;
   padding: 1mm;
-
 }
 
 .grid-item-content {
@@ -171,10 +167,10 @@ main {
 
 .grid-in-sidebar {
   display: grid;
-  grid-template-columns: 20% 80% ;
+  grid-template-columns: 20% 80%;
 }
 
-.grid-item-header{
+.grid-item-header {
   background-color: #263238;
   grid-row: 1 / 2;
   grid-column: mainstart / sidebarend;
@@ -183,15 +179,24 @@ main {
 .vertical-text-style {
   font-family: mainTextStyle;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   color: #150404;
   border: #150404 solid 5px;
   background-color: gray;
   font-size: 43px;
-  text-decoration: solid;
-  overflow: hidden;
-  line-height: 50px;
+  writing-mode: vertical-rl; /* Вертикальный текст */
+  text-orientation: upright; /* Буквы не поворачиваются */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+  letter-spacing: 13px; /* Увеличивает расстояние между буквами */
+  line-height: 1.8; /* Увеличивает расстояние между строками */
 }
+
+
+
 
 .sidebar-text-style {
   font-family: mainTextStyle;
@@ -225,7 +230,7 @@ footer {
   white-space: nowrap;
   border: 5px solid black;
   background-color: gray;
-  gap: 0px
+  gap: 0px;
 }
 
 .second-footer-div {
@@ -234,7 +239,7 @@ footer {
 }
 
 .footer-text {
-  width: 30%; 
+  width: 30%;
   font-family: footerStyle;
   justify-content: flex-start;
   font-size: large;
@@ -255,7 +260,6 @@ footer {
 .rain-hgwrts {
   position: relative;
   display: inline-block;
-  
 }
 
 .text-overlay {
@@ -269,7 +273,7 @@ footer {
 .text-overlay h1 {
   margin-top: 0;
   padding-top: 0;
-  color:gray;
+  color: gray;
   font-size: 40px;
 }
 
@@ -277,10 +281,6 @@ footer {
   margin: 1px 0;
 }
 
-
-
-
-
-
-
-
+.spn-underline {
+  text-decoration: underline;
+}
