@@ -184,19 +184,16 @@ main {
   border: #150404 solid 5px;
   background-color: gray;
   font-size: 43px;
-  writing-mode: vertical-rl; /* Вертикальный текст */
-  text-orientation: upright; /* Буквы не поворачиваются */
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   padding: 10px;
-  letter-spacing: 13px; /* Увеличивает расстояние между буквами */
-  line-height: 1.8; /* Увеличивает расстояние между строками */
+  letter-spacing: 13px; 
+  line-height: 1.8; 
 }
-
-
-
 
 .sidebar-text-style {
   font-family: mainTextStyle;
